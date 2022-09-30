@@ -22,22 +22,6 @@ export const RouterHead = component$(() => {
         href="https://fonts.googleapis.com/css2?family=Poppins&amp;display=swap"
         rel="stylesheet"
       />
-
-      <meta property="og:site_name" content="Qwik" />
-      <meta name="twitter:site" content="@QwikDev" />
-      <meta name="twitter:title" content="Qwik" />
-
-      {head.meta.map((m) => (
-        <meta {...m} />
-      ))}
-
-      {head.links.map((l) => (
-        <link {...l} />
-      ))}
-
-      {head.styles.map((s) => (
-        <style {...s.props} dangerouslySetInnerHTML={s.style} />
-      ))}
     </>
   );
 });
